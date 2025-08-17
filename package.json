@@ -2,7 +2,6 @@
   "name": "hardhat-fund-me",
   "author": "Jay Patel",
   "version": "1.0.0",
-  "type": "module",
   "devDependencies": {
     "@chainlink/contracts": "^0.8.0",
     "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
