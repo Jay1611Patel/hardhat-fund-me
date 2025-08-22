@@ -4,7 +4,7 @@ const { developmentChains } = require("../../helper-hardhat-config")
 
 // testing the unit tests for the FundMe contracts
 // testing the unit tests --- IGNORE ---
-// This is a test for the FundMe contracts
+// This is a test for the FundMe 
 !developmentChains.includes(network.name)
     ? describe.skip
     : describe("FundMe", function () {
