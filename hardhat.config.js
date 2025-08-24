@@ -46,14 +46,8 @@ module.exports = {
     },
     gasReporter: {
         enabled: true,
-        outputFile: "gas-report.json",
-        currency: "USD", 
-        gasPrice: 20,
-        // CRITICAL: This ensures proper method names are captured
-        showMethodSig: true,           // ← Show full method signatures
-        showTimeSpent: true,           // ← Show time measurements
-        onlyCalledMethods: false,      // ← Show all methods, not just called ones
-        coinmarketcap: process.env.COINMARKETCAP_API_KEY,
+        outputJSON: true,
+        outputFile: 'gasReporterOutput.json',
     },
     namedAccounts: {
         deployer: {
