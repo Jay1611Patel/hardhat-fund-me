@@ -46,10 +46,8 @@ module.exports = {
     },
     gasReporter: {
         enabled: true,
-        currency: "USD",
-        outputFile: "gas-report.txt",
-        noColors: true,
-        // coinmarketcap: COINMARKETCAP_API_KEY,
+        outputJSON: true,
+        outputFile: 'gasReporterOutput.json',
     },
     namedAccounts: {
         deployer: {
