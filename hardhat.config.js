@@ -23,12 +23,12 @@ module.exports = {
             chainId: 31337,
             // gasPrice: 130000000000,
         },
-        sepolia: {
-            url: SEPOLIA_RPC_URL,
-            accounts: [PRIVATE_KEY],
-            chainId: 11155111,
-            blockConfirmations: 6,
-        },
+        // sepolia: {
+        //     url: SEPOLIA_RPC_URL,
+        //     accounts: [PRIVATE_KEY],
+        //     chainId: 11155111,
+        //     blockConfirmations: 6,
+        // },
     },
     solidity: {
         compilers: [
@@ -41,7 +41,7 @@ module.exports = {
         ],
     },
     etherscan: {
-        apiKey: ETHERSCAN_API_KEY,
+        //apiKey: ETHERSCAN_API_KEY,
         // customChains: [], // uncomment this line if you are getting a TypeError: customChains is not iterable
     },
     gasReporter: {
