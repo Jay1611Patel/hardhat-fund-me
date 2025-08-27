@@ -46,8 +46,12 @@ module.exports = {
     },
     gasReporter: {
         enabled: true,
-        outputJSON: true,
-        outputFile: 'gasReporterOutput.json',
+        currency: "USD",
+        token: "ETH",
+        outputFile: "gasReporterOutput.json",  // save to file
+        outputJSON: true,                      // 👈 THIS forces valid JSON
+        noColors: true,
+        showMethodSig: true
     },
     namedAccounts: {
         deployer: {
