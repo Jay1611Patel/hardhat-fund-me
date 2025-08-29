@@ -49,12 +49,19 @@ const { developmentChains } = require("../../helper-hardhat-config")
                       await fundMe.getAddressToAmountFunded(deployer)
                   assert.equal(response.toString(), sendValue.toString())
               })
-              
+
               it("Adds funder to array of funders", async function () {
                   await fundMe.fund({ value: sendValue })
                   const response = await fundMe.getFunder(0)
                   assert.equal(response, deployer)
               })
+
+              it("fund multiple accounts [Gas]", async function () {
+                    const accounts = await ethers.getSigners()
+                    for (let i = 0; i < 10; i++) {
+                        await fundMe.connect(accounts[i]).fund({ value: sendValue })
+                    }
+                })
           })
 
           describe("withdraw", async function () {
